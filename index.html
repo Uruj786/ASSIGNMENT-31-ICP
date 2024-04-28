@@ -1,12 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        #image{
+        h1{
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+        }
+        body {
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+        }
+
+        #image {
             height: 400px;
             width: 400px;
             border: 2px solid red;
@@ -15,9 +28,10 @@
             border: 1px solid black;
             border-radius: 20px;
             margin: auto;
-            box-shadow: 5px 0px 10px 8px rgba(0,0,0,0.25);
+            box-shadow: 5px 0px 10px 8px rgba(0, 0, 0, 0.25);
         }
-        .product-img{
+
+        .product-img {
             height: 50px;
             width: 50px;
             border: 1px solid black;
@@ -26,7 +40,8 @@
             cursor: pointer;
             padding: 2px;
         }
-        .restimg{
+
+        .restimg {
             display: flex;
             justify-content: center;
             gap: 10px;
@@ -34,9 +49,11 @@
         }
     </style>
 </head>
-  <body class="" >
-    <h1>DATE AND TIME</h1>
-    <input type="text">
+
+<body class="">
+    <marquee behavior="" direction="">
+        <h1>adding diffrent diffrent review images</h1>
+    </marquee>
     <img src="blueiphone.webp" alt="" id="image">
     <div class="restimg">
         <img src="green iphone.jpeg" class="product-img" onclick="green()" alt="">
@@ -45,29 +62,32 @@
         <img src="download.jpeg" class="product-img" onclick="black()" alt="">
     </div>
     <script>
-        function green(){
-            const imageEle=document.getElementById("image");
-            imageEle.src="green iphone.jpeg";
+        function green() {
+            const imageEle = document.getElementById("image");
+            imageEle.src = "green iphone.jpeg";
 
         }
-        function red(){
-            const imageEle=document.getElementById("image");
-            imageEle.src="iphonered.jpeg";
+        function red() {
+            const imageEle = document.getElementById("image");
+            imageEle.src = "iphonered.jpeg";
 
         }
-        function yellow(){
-            const imageEle=document.getElementById("image");
-            imageEle.src="yellow.jpeg";
+        function yellow() {
+            const imageEle = document.getElementById("image");
+            imageEle.src = "yellow.jpeg";
 
         }
-        function black(){
-            const imageEle=document.getElementById("image");
-            imageEle.src="download.jpeg";
-        
+        function black() {
+            const imageEle = document.getElementById("image");
+            imageEle.src = "download.jpeg";
+
         }
-        
-        
+
+
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
