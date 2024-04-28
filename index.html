@@ -20,7 +20,7 @@
         }
 
         #image {
-            height: 400px;
+            height: ma;
             width: 400px;
             border: 2px solid red;
             object-fit: cover;
@@ -47,6 +47,14 @@
             gap: 10px;
             margin-top: 30px;
         }
+        .red-img{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -57,8 +65,8 @@
     <img src="blueiphone.webp" alt="" id="image">
     <div class="restimg">
         <img src="green iphone.jpeg" class="product-img" onclick="green()" alt="">
-        <img src="iphonered.jpeg" class="product-img" alt="" onclick="red()">
-        <img src="yellow.jpeg" class="product-img" alt="" onclick="yellow()">
+        <img src="iphonered.jpeg" class=" red-img " alt="" onclick="red()">
+        <img src="yellow.jpeg" class="product-img"  alt="" onclick="yellow()">
         <img src="download.jpeg" class="product-img" onclick="black()" alt="">
     </div>
     <script>
